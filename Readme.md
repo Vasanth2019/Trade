@@ -13,13 +13,19 @@ APIs
 -----
 
 /trades -- To get list of Trades
-/latestTrade?tradeId=<<tradeId>>&versionId=<<versionId>> -- To get the latest version details of the Trade
+
+/latestTrade?tradeId=tradeId&versionId=versionId -- To get the latest version details of the Trade based on TradeId and versionId
+
 /addTrade {Trade Object} -- Add Trade
+
 /updateTrade {Trade Object} -- Updates Trade if exists else creates new Trade
+
 /deleteTrade {Trade Object} -- Delete Trade if exists
   
 Access Api
 ----------
   
-  http://<<serverName>>:8080/<<APIs>>
-
+  http://serverName:8080/APIs
+  
+  Eg:-
+   http://localhost:8080/trades
